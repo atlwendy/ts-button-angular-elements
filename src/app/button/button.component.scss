@@ -1,0 +1,1172 @@
+/**
+ * The primary easing definition
+ *
+ * @nuclide easing
+ * @section Animation
+ */
+$g-easing: cubic-bezier(.26, .86, .44, .985) !default;
+
+/**
+ * The material background easing definition
+ *
+ * @nuclide easing
+ * @section Animation
+ */
+$g-material-background-easing: cubic-bezier(.25, .8, .25, 1) !default;
+
+/**
+ * The material shadow easing definition
+ *
+ * @nuclide easing
+ * @section Animation
+ */
+$g-material-shadow-easing: cubic-bezier(.4, 0, .2, 1) !default;
+
+
+
+// Currently used in form-field and select components
+$swift-ease-out-duration: 400ms !default;
+$swift-ease-out-timing-function: cubic-bezier(.25, .8, .25, 1) !default;
+$swift-ease-in-duration: 300ms !default;
+$swift-ease-in-timing-function: cubic-bezier(.55, 0, .55, .2) !default;
+
+
+/**
+ * Pure - Dark
+ *
+ * @color
+ * @section UI: Dark
+ */
+$color__pure--dark: #302d35 !default;
+
+/**
+ * Pure - Light
+ *
+ * @color
+ * @section UI: Light
+ */
+$color__pure--light: #fafafa !default;
+
+
+
+
+/**
+ * Utility - Extra Dark
+ *
+ * @color
+ * @section UI: Utility
+ */
+$color__utility--xdark: #3e3c43 !default;
+
+/**
+ * Utility - Dark
+ *
+ * @color
+ * @section UI: Utility
+ */
+$color__utility--dark: #48464d !default;
+
+/**
+ * Utility
+ *
+ * @color
+ * @section UI: Utility
+ */
+$color__utility: #999 !default;
+
+/**
+ * Utility - Light
+ *
+ * @color
+ * @section UI: Utility
+ */
+$color__utility--light: #cecdd1 !default;
+
+/**
+ * Utility - Extra Light
+ *
+ * @color
+ * @section UI: Utility
+ */
+$color__utility--xlight: #f2f0f7 !default;
+
+
+
+
+/**
+ * Primary - Extra Dark
+ *
+ * @color
+ * @section UI: Primary
+ */
+$color__primary--xdark: #0a375b !default;
+
+/**
+ * Primary - Dark
+ *
+ * @color
+ * @section UI: Primary
+ */
+$color__primary--dark: #0c4271 !default;
+
+/**
+ * Primary
+ *
+ * @color
+ * @section UI: Primary
+ */
+$color__primary: #00538a !default;
+
+/**
+ * Primary - Light
+ *
+ * @color
+ * @section UI: Primary
+ */
+$color__primary--light: #1666b1 !default;
+
+/**
+ * Primary - xLight
+ *
+ * @color
+ * @section UI: Primary
+ */
+$color__primary--xlight: #1777b6 !default;
+
+
+
+
+/**
+ * Accent - Extra Dark
+ *
+ * @color
+ * @section UI: Accent
+ */
+$color__accent--xdark: #2b673f !default;
+
+/**
+ * Accent - Dark
+ *
+ * @color
+ * @section UI: Accent
+ */
+$color__accent--dark: #317448 !default;
+
+/**
+ * Accent
+ *
+ * @color
+ * @section UI: Accent
+ */
+$color__accent: #2f854d !default;
+
+/**
+ * Accent - Light
+ *
+ * @color
+ * @section UI: Accent
+ */
+$color__accent--light: #3b9b5c !default;
+
+/**
+ * Accent - xLight
+ *
+ * @color
+ * @section UI: Accent
+ */
+
+/*
+ *$color__accent--xlight: #48ac6a !default;
+ */
+$color__accent--xlight: lighten($color__accent, 60%) !default;
+
+
+
+
+/**
+ * Error - Dark
+ *
+ * @color
+ * @section UI: Error
+ */
+$color__error--dark: #b55949 !default;
+
+/**
+ * Error
+ *
+ * @color
+ * @section UI: Error
+ */
+$color__error: #c8604d !default;
+
+/**
+ * Error - Light
+ *
+ * @color
+ * @section UI: Error
+ */
+$color__error--light: #d76c59 !default;
+
+
+
+
+/**
+ * Warn - Dark
+ *
+ * @color
+ * @section UI: Warn
+ */
+$color__warn--dark: #cc9f45 !default;
+
+/**
+ * Warn
+ *
+ * @color
+ * @section UI: Warn
+ */
+$color__warn: #dea83b !default;
+
+/**
+ * Warn - Light
+ *
+ * @color
+ * @section UI: Warn
+ */
+$color__warn--light: #e8b550 !default;
+
+
+
+
+/**
+ * Highlight - Dark
+ *
+ * @color
+ * @section UI: Highlight
+ */
+$color__highlight--dark: #ddd455 !default;
+
+/**
+ * Highlight
+ *
+ * @color
+ * @section UI: Highlight
+ */
+$color__highlight: #efe557 !default;
+
+/**
+ * Highlight - Light
+ *
+ * @color
+ * @section UI: Highlight
+ */
+$color__highlight--light: #f4eb6e !default;
+
+
+/**
+ * The map of colors
+ *
+ * Note: Currently, warn and error are the same color in the $palettes map. More work needs to be
+ * done to solidify our palette.
+ *
+ * @nuclide palettes
+ * @section Config
+ */
+$palettes: (
+  primary: (
+    xlight: $color__primary--xlight,
+    light: $color__primary--light,
+    base: $color__primary,
+    dark: $color__primary--dark,
+    xdark: $color__primary--xdark
+  ),
+  accent: (
+    xlight: $color__accent--xlight,
+    light: $color__accent--light,
+    base: $color__accent,
+    dark: $color__accent--dark,
+    xdark: $color__accent--xdark
+  ),
+  error: (
+    light: $color__error--light,
+    base: $color__error,
+    dark: $color__error--dark
+  ),
+  warn: (
+    light: $color__error--light,
+    base: $color__error,
+    dark: $color__error--dark
+  ),
+  highlight: (
+    light: $color__highlight--light,
+    base: $color__highlight,
+    dark: $color__highlight--dark
+  ),
+  pure: (
+    dark: $color__pure--dark,
+    base: $color__pure--light
+  ),
+  utility: (
+    xlight: $color__utility--xlight,
+    light: $color__utility--light,
+    base: $color__utility,
+    dark: $color__utility--dark,
+    xdark: $color__utility--xdark
+  )
+);
+
+
+
+
+/**
+ * Retrieve a color from the colors map
+ *
+ * @mixin color
+ * @section Functions
+ * @param $palette
+ *  The palette to use from the map
+ * @param $tone
+ *  The tone to use from the selected map. Default: base
+ * @example
+ *  @include color(primary);
+ *  @include color(accent, light);
+ */
+@function color($palette, $tone: 'base') {
+  // Verify the palette exists (color)
+  @if not(map-has-key($palettes, $palette)) {
+    $allowed: map-keys($palettes);
+    @error 'Invalid palette name: `#{$palette}`. Allowed palettes: #{$allowed}';
+  }
+
+  // Verify the tone exists (variation)
+  @if not(map-has-key(map-get($palettes, $palette), $tone)) {
+    $allowed: map-keys(map-get($palettes, $palette));
+    @error 'Invalid palette tone: `#{$tone}`. Allowed tones for `#{$palette}` are: #{$allowed}';
+  }
+
+  @return map-get(map-get($palettes, $palette), $tone);
+}
+
+
+
+/**
+ * The map themes to colors
+ *
+ * @nuclide theme-color-map
+ * @section Config
+ */
+$theme-and-color: (
+  'primary': $color__primary,
+  'accent': $color__accent,
+  'error': $color__error,
+  'warn': $color__warn,
+  'highlight': $color__highlight,
+  'pure': $color__pure--light,
+  'utility': $color__utility
+);
+
+
+/**
+ * Output conditional styles for the possible themes
+ *
+ * @mixin theme-color
+ * @section Functions
+ * @param $property
+ *  The CSS property that should be colored. Default: 'background-color'
+ * @example
+ *  @include theme-color;
+ *  @include theme-color('color');
+ */
+@mixin theme-color($property: 'background-color') {
+  // Verify an allowed property was passed in
+  @if not(($property == background-color)) and not(($property == color)) {
+    @error 'The `theme__color` mixin only accepts `background-color` or `color`';
+  }
+
+  @each $key, $value in $theme-and-color {
+    ::ng-deep .u-theme--#{$key} & {
+      &[disabled] {
+        background-color: color(utility, light);
+        color: color(utility);
+      }
+      #{$property}: $value;
+
+      @if ($property == 'background-color') and (not(($key == 'pure')) and not(($key == 'highlight'))) {
+        color: $color__pure--light;
+      }
+
+      @if ($property == 'background-color') and ($key == 'highlight') {
+        color: $color__pure--dark;
+      }
+    }
+  }
+}
+
+
+// stylelint-disable value-keyword-case
+
+/**
+ * Define the material based primary map
+ *
+ * @nuclide Material Primary Map
+ * @section Config > Colors
+ */
+$ts-material-primary: (
+  50: $color__primary--xlight,
+  100: $color__primary--light,
+  200: $color__primary,
+  300: $color__primary,
+  400: $color__primary,
+  500: $color__primary,
+  600: $color__primary,
+  700: $color__primary--dark,
+  800: $color__primary,
+  900: $color__primary--xdark,
+  A100: $color__primary,
+  A200: $color__primary,
+  A400: $color__primary,
+  A700: $color__primary,
+  contrast: (
+    50: $color__pure--light,
+    100: $color__pure--light,
+    200: $color__pure--light,
+    300: $color__pure--light,
+    400: $color__pure--light,
+    500: $color__pure--light,
+    600: $color__pure--light,
+    700: $color__pure--light,
+    800: $color__pure--light,
+    900: $color__pure--light,
+    A100: $color__pure--light,
+    A200: $color__pure--light,
+    A400: $color__pure--light,
+    A700: $color__pure--light,
+  )
+);
+
+/**
+ * Define the material based accent map
+ *
+ * @nuclide Material Accent Map
+ * @section Config > Colors
+ */
+$ts-material-accent: (
+  50: $color__accent--xlight,
+  100: $color__accent--light,
+  200: $color__accent,
+  300: $color__accent,
+  400: $color__accent,
+  500: $color__accent,
+  600: $color__accent,
+  700: $color__accent--dark,
+  800: $color__accent,
+  900: $color__accent--xdark,
+  A100: $color__accent,
+  A200: $color__accent,
+  A400: $color__accent,
+  A700: $color__accent,
+  contrast: (
+    50: $color__pure--light,
+    100: $color__pure--light,
+    200: $color__pure--light,
+    300: $color__pure--light,
+    400: $color__pure--light,
+    500: $color__pure--light,
+    600: $color__pure--light,
+    700: $color__pure--light,
+    800: $color__pure--light,
+    900: $color__pure--light,
+    A100: $color__pure--light,
+    A200: $color__pure--light,
+    A400: $color__pure--light,
+    A700: $color__pure--light,
+  )
+);
+
+/**
+ * Define the material based warn map
+ *
+ * @nuclide Material Warn Map
+ * @section Config > Colors
+ */
+$ts-material-warn: (
+  50: $color__error--light,
+  100: $color__error--light,
+  200: $color__error,
+  300: $color__error,
+  400: $color__error,
+  500: $color__error,
+  600: $color__error,
+  700: $color__error--dark,
+  800: $color__error,
+  900: $color__error--dark,
+  A100: $color__error,
+  A200: $color__error,
+  A400: $color__error,
+  A700: $color__error,
+  contrast: (
+    50: $color__pure--light,
+    100: $color__pure--light,
+    200: $color__pure--light,
+    300: $color__pure--light,
+    400: $color__pure--light,
+    500: $color__pure--light,
+    600: $color__pure--light,
+    700: $color__pure--light,
+    800: $color__pure--light,
+    900: $color__pure--light,
+    A100: $color__pure--light,
+    A200: $color__pure--light,
+    A400: $color__pure--light,
+    A700: $color__pure--light,
+  )
+);
+
+// stylelint-enable value-keyword-case
+
+/**
+ * The map of available cursors
+ *
+ * @nuclide
+ * @section Cursors
+ */
+$g-cursors: (
+  /* Let the browser decide*/
+  auto,
+  /* Indicates text controls*/
+  text,
+  /* Indicates interaction*/
+  pointer,
+  /* Indicates no available interaction*/
+  not-allowed,
+  /* Indicates ability to copy*/
+  copy,
+  /* Indicates an alias or copy will be made*/
+  alias,
+  /* Indicates help is available*/
+  help,
+);
+
+
+/**
+ * Retrieve a space from the $g-cursors list.
+ *
+ * The primary purpose for this function is to enforce which cursors can be used.
+ *
+ * @mixin cursor
+ * @section Functions
+ * @param $type
+ *  The cursor value to use. Default: auto
+ * @example
+ *  cursor: cursor();
+ *  cursor: cursor(pointer);
+ */
+@function cursor($type: auto) {
+  $index: index($g-cursors, $type);
+
+  // Verify the type exists
+  @if ($index == null) {
+    @error 'Invalid cursor type name: `#{$type}`. Allowed types: "#{$g-cursors}"';
+  }
+
+  @return nth($g-cursors, $index);
+}
+
+
+/**
+ * Include a custom cursor
+ *
+ * @mixin cursor
+ * @section Mixins
+ * @param $type
+ *  The cursor value to use.
+ * @example
+ *  @include cursor;
+ *  @include cursor(pointer);
+ */
+@mixin cursor($type) {
+  cursor: cursor($type);
+}
+
+/**
+ * Reset browser and bootstrap styles
+ *
+ * NOTE: This is needed because we cannot use a global reset stylesheet. Once the full Terminus app
+ * has transitioned to the UI library, this can be removed in favor of a global reset stylesheet.
+ *
+ * @mixin reset
+ * @section Reset
+ * @example
+ *  @include reset;
+ */
+@mixin reset() {
+  // Enforce consistent sizing
+  // NOTE: wrappers for Material labels use a custom box-sizing
+  *:not(.mat-form-field-label-wrapper) {
+    box-sizing: border-box;
+  }
+
+  // Unset margins
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  p {
+    margin: unset;
+  }
+}
+
+/**
+ * The spacing default
+ *
+ * @nuclide spacing
+ * @section Spacing
+ */
+$g-spacing: 16px !default;
+
+
+/**
+ * The map of layout spacings
+ *
+ * Small: 12, 8, 4
+ * Base: 16
+ * Large: 24, 32, 40, 48, 56, 72, 96
+ *
+ * @nuclide spacing
+ * @section Spacing
+ */
+$g-spacings: (
+  small:  (
+    2: floor($g-spacing / 4),
+    1: floor($g-spacing / 2),
+    0: floor($g-spacing - 4),
+  ),
+  default: (
+    0: $g-spacing,
+  ),
+  large: (
+    0: ceil($g-spacing / 2 * 3),
+    1: ceil($g-spacing / 2 * 4),
+    2: ceil($g-spacing / 2 * 5),
+    3: ceil($g-spacing / 2 * 6),
+    4: ceil($g-spacing / 2 * 7),
+    5: ceil($g-spacing / 2 * 9),
+    6: ceil($g-spacing / 2 * 12),
+  )
+);
+
+
+/**
+ * Retrieve a space from the $g-spacings map
+ *
+ * @mixin spacing
+ * @section Functions
+ * @param $type
+ *  The spacing map to use. Default: default
+ * @param $size
+ *  The value desired from the map. Default: 0
+ * @example
+ *  padding: spacing();
+ *  padding: spacing(large, 4);
+ */
+@function spacing($type: default, $size: 0) {
+  // Verify the type exists
+  @if not(map-has-key($g-spacings, $type)) {
+    $allowed: map-keys($g-spacings);
+    @error 'Invalid spacing type name: `#{$type}`. Allowed type: #{$allowed}';
+  }
+
+  // Verify the size
+  @if not(map-has-key(map-get($g-spacings, $type), $size)) {
+    $allowed: map-keys(map-get($g-spacings, $type));
+    @error 'Invalid size: `#{$size}`. Allowed sizes for `#{$type}` are: #{$allowed}';
+  }
+
+  @return map-get(map-get($g-spacings, $type), $size);
+}
+
+/*
+ * NOTE: Adding the @nuclide annotation to any of these variables or maps causes Nucleus to break.
+ * The error is in nucleus-styleguide/src/Transform.js line 57
+ */
+
+/**
+ * The base typeface
+ *
+ * @nuclide
+ * @section Typography
+ */
+$type__family--base: #{Roboto, 'Helvetica Neue', Helvetica, Arial, sans-serif} !default;
+
+/**
+ * The monospaced typeface family
+ *
+ * @nuclide
+ * @section Typography
+ */
+$type__family--monospaced: #{'Lucida Console', Monaco, 'DejaVu Sans Mono', monospace} !default;
+
+/**
+ * The available typefaces
+ *
+ * @nuclide
+ * @section Typography
+ */
+$typography-typefaces: (
+  'primary': $type__family--base,
+  'monospaced': $type__family--monospaced
+);
+
+/**
+ * The base typography size
+ *
+ * @nuclide
+ * @section Typography
+ */
+$type__size--base: 16px !default;
+
+/**
+ * The base typography weight
+ *
+ * @nuclide
+ * @section Typography
+ */
+$type__weight--base: 300 !default;
+
+/**
+ * The available typography formats
+ *
+ * @nuclide
+ * @section Typography
+ */
+$typography-formats: (
+  'display',
+  'headline',
+  'title',
+  'subhead',
+  'body',
+  'caption',
+  'fixedwidth',
+  'hint'
+);
+
+/**
+ * The available typography levels for the `display` format
+ *
+ * @nuclide
+ * @section Typography
+ */
+$typography-display-levels: (
+  1,
+  2,
+  3,
+  4
+);
+
+/**
+ * The available typography levels for the `body` format
+ *
+ * @nuclide
+ * @section Typography
+ */
+$typography-body-levels: (
+  1,
+  2
+);
+
+
+/**
+ * Return typography styles based on the format and level
+ *
+ * @mixin typography
+ * @section Style Helpers
+ * @param $format
+ *  One of the available formats defined within $typography-formats. Default: 'body'.
+ * @param $level
+ *  One of the accepted levels for the passed in format. Default: 1
+ * @param $typeface
+ *  One of the available typefaces defined in $typography-typefaces. Default: 'primary'
+ * @example
+ *  @include typography;
+ *  @include typography(display, 4);
+ */
+@mixin typography($format: 'body', $level: 1, $typeface: 'primary') {
+  // Verify the format is valid
+  @if index($typography-formats, $format) == null {
+    @error 'Invalid typography format: `#{$format}`. Allowed formats: #{$typography-formats}';
+  }
+
+  // Verify the typeface is valid
+  @if not(map-has-key($typography-typefaces, $typeface)) {
+    $allowed: map-keys($typography-typefaces);
+    @error 'Invalid typography typeface: `#{$typeface}`. Allowed typefaces: #{$allowed}';
+  } @else {
+    font-family: map-get($typography-typefaces, $typeface);
+  }
+
+
+  // DISPLAY
+  @if $format == 'display' {
+    // Verify the level is valid for this format
+    @if index($typography-display-levels, $level) == null {
+      @error 'Invalid display format level: `#{$level}`. Allowed levels: #{$typography-display-levels}';
+    }
+
+    @if $level == 1 {
+      font-size: 34px;
+      font-weight: 500;
+      line-height: 40px;
+    }
+
+    @if $level == 2 {
+      font-size: 45px;
+      font-weight: 500;
+      line-height: 64px;
+    }
+
+    @if $level == 3 {
+      font-size: 56px;
+      font-weight: 500;
+      letter-spacing: -.005em;
+      line-height: 56px;
+    }
+
+    @if $level == 4 {
+      font-size: 112px;
+      font-weight: 300;
+      letter-spacing: -.01em;
+      line-height: 112px;
+    }
+  }
+
+
+  // HEADLINE
+  @if $format == 'headline' {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 32px;
+  }
+
+
+  // TITLE
+  @if $format == 'title' {
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: .005em;
+  }
+
+
+  // SUBHEAD
+  @if $format == 'subhead' {
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: .01em;
+    line-height: 24px;
+  }
+
+
+  // BODY
+  @if $format == 'body' {
+    font-size: 16px;
+    letter-spacing: .01em;
+
+    // Verify the level is valid for this format
+    @if index($typography-body-levels, $level) == null {
+      @error 'Invalid body format level: `#{$level}`. Allowed levels: #{$typography-body-levels}';
+    }
+
+    @if $level == 1 {
+      font-weight: 300;
+
+      // TODO: overwrite in files rather than this nested chain (too specific) https://github.com/GetTerminus/terminus-ui/issues/1152
+      // Don't apply custom line-height to buttons
+      &:not(.c-button) {
+        &:not(.c-input) {
+          &:not(.c-select) {
+            &:not(.ts-checkbox) {
+              line-height: 20px;
+            }
+          }
+        }
+      }
+    }
+
+    @if $level == 2 {
+      font-weight: 500;
+    }
+  }
+
+
+  // CAPTION
+  @if $format == 'caption' {
+    font-size: 12px;
+    letter-spacing: .02em;
+  }
+
+
+  // FIXEDWIDTH
+  @if $format == 'fixedwidth' {
+    font-family: $type__family--monospaced;
+  }
+
+
+  // Hints (for inputs)
+  @if $format == 'hint' {
+    color: color(utility);
+    font-size: 75%;
+    font-weight: 300;
+    letter-spacing: .01em;
+    line-height: 1.5;
+  }
+
+}
+
+
+/**
+ * Truncate overflowing text with an ellipsis
+ *
+ * @mixin typography
+ * @section Style Helpers
+ * @example
+ *  @include truncate-overflow;
+ */
+@mixin truncate-overflow() {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+
+
+// This makes the bottom padding space look better than the default 36px
+$button-line-height: 35px;
+$rotation: 360deg;
+// NOTE: All transition durations are based off of the content transition. We should only need to
+// adjust this value.
+$content-transition-duration: 500ms;
+$icon-transition-duration-collapse: $content-transition-duration - 100ms; // 400
+$icon-transition-duration-expand: $icon-transition-duration-collapse - 100ms; // 300
+$label-transition-duration: $icon-transition-duration-expand - 100ms; // 200
+$color-transition-duration: $label-transition-duration - 100ms; // 100
+
+$color-transition: color $color-transition-duration $g-easing;
+// FIXME: This exact transition is needed in the link styles (when inside a menu, links emulate
+// button styles). How can we share something this specific? Or simply make this more generic
+$background-transition: background $icon-transition-duration-collapse $g-material-background-easing;
+$shadow-transition: box-shadow $icon-transition-duration-expand $g-material-shadow-easing;
+
+// Styles applied when the button is collapsed
+@mixin collapsed {
+  padding-left: 6px;
+  padding-right: 6px;
+
+  .c-icon {
+    margin-left: 0;
+    margin-right: 0;
+    position: relative;
+    transform: rotate(#{$rotation});
+    transition-duration: $icon-transition-duration-collapse;
+  }
+
+  // collapse the text content
+  .c-button__content {
+    max-width: 0;
+  }
+}
+
+
+
+
+//
+// @component
+//  Button
+// @description
+//  A button component
+//
+.ts-button {
+  @include reset;
+  display: inline-block;
+
+  // Top level styles should be nested here
+  .c-button {
+    @include typography;
+    border: 1px solid transparent;
+    border-radius: 3px;
+    color: color(pure);
+    line-height: $button-line-height;
+    // Overwrite material min-width
+    min-width: auto;
+    // stylelint-disable declaration-no-important
+    // Important needed to override the `!important` within the ladda styles
+    transition: $color-transition, $background-transition, $shadow-transition !important;
+    // stylelint-enable declaration-no-important
+    will-change: background, color, contents;
+  }
+}
+
+
+.c-button {
+  // Define theme styles
+  $themes: primary accent warn;
+  $collapsable-radius: 2em;
+
+  &[disabled] {
+    @include cursor(not-allowed);
+  }
+
+  .mat-button-wrapper {
+    // Set up for spinner
+    position: relative;
+    transition: padding 200ms ease-out;
+    will-change: padding, margin;
+  }
+
+  // Class added when progress indicator is shown
+  &.c-button--progress {
+    .mat-button-wrapper {
+      padding-right: 36px;
+    }
+  }
+
+  // Adjust icon vertical layout
+  .c-icon {
+    margin-right: .2em;
+    // Fix small vertical aligment issue between icon & text
+    margin-top: -.15em;
+    transition: transform $icon-transition-duration-expand $g-easing;
+    vertical-align: middle;
+    will-change: transform;
+  }
+
+  // Overwrite the Material spinner to fit our layout
+  .c-button__spinner {
+    display: inline-block;
+    opacity: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: opacity $label-transition-duration $g-easing;
+    will-change: opacity;
+
+    &--active {
+      opacity: 1;
+    }
+
+    circle {
+      stroke: color(utility);
+    }
+  }
+
+  // Collapsed and not focused or hovered
+  &.c-button--collapsed {
+    &:not(:hover) {
+      &:not(:focus) {
+        @include collapsed;
+      }
+    }
+  }
+
+  // When collapsable AND disabled
+  &.c-button--collapsable {
+    &[disabled] {
+      &:not(:hover) {
+        &:not(:focus) {
+          @include collapsed;
+        }
+      }
+    }
+  }
+
+  // Loop through using each theme name to create styles
+  @each $theme in $themes {
+
+    // Theme class sets the colors for standard buttons
+    &.c-button--#{$theme} {
+      background-color: color(#{$theme});
+
+      &[disabled] {
+        background-color: color(utility, light);
+        color: color(utility);
+      }
+
+      // Collapsable button
+      &.c-button--collapsable {
+        border-radius: $collapsable-radius;
+
+        // Fix left alignment when the icon is the first item
+        .c-icon {
+          margin-left: -.15em;
+        }
+
+        .c-button__content {
+          display: inline-block;
+          max-width: 400px;
+          overflow: hidden;
+          transition: max-width $content-transition-duration $g-easing;
+          white-space: nowrap;
+          will-change: max-width;
+        }
+
+        .mat-ripple {
+          border-radius: $collapsable-radius;
+        }
+      }
+
+      // Hollow button
+      &.c-button--hollow {
+        background-color: transparent;
+        border-color: color(#{$theme});
+        box-shadow: none;
+        color: color(#{$theme});
+
+        &:focus,
+        &:hover {
+          background-color: color(#{$theme});
+          color: color(pure);
+        }
+
+        &[disabled] {
+          background-color: transparent;
+          border-color: color(utility);
+          color: color(utility);
+        }
+      }
+    }
+  }
+}
+
+
+
+
+//
+// Target button instances nested inside a TsMenuComponent
+.c-button {
+  .mat-menu-panel & {
+    // needed for specificity
+    &.c-button {
+      background-color: transparent;
+      box-shadow: none;
+      color: color(pure, dark);
+      text-align: left;
+      width: 100%;
+
+      &:focus,
+      &:active,
+      &:hover {
+        background-color: color(utility, xlight);
+        box-shadow: none;
+        color: color(primary);
+      }
+    }
+  }
+}
+
+
+// Target instances nested inside the TsSearchComponent
+.ts-button {
+  .ts-search & {
+    // Offset to account for space under input for error messages
+    position: relative;
+    top: -#{spacing(small)};
+  }
+}
